@@ -35,7 +35,6 @@ export default {
 <style scoped>
 .flex-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 </style>

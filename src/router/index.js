@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import Filters from '../views/Filters.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'Filters',
+    component: Filters,
   },
   {
     path: '/directives',

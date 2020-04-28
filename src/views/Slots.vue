@@ -8,21 +8,21 @@
       <Container title="Changed title" />
       <Container text="Changed text" />
 
-      <!-- #3 Need to change header to h1-->
+      <!-- #3 Named slot header: Need to change header to h1-->
       <Container>
         <template #header>
           <h1>H1 title</h1>
         </template>
       </Container>
 
-      <!-- #4 Need to change to h1 but use default title -->
+      <!-- #4 Scoped slots: Need to change to h1 but use default title -->
       <Container>
         <template #header="{ title }">
           <h1>{{ title }}</h1>
         </template>
       </Container>
 
-      <!-- #5 Change main content  -->
+      <!-- #5 Named slot content: Change main content  -->
       <Container title="Dual Layout">
         <template #content>
           <DualLayout />
@@ -59,6 +59,7 @@ export default {
 <style>
 #slots {
   background-color: #333;
+  min-height: calc(100vh - 62px);
 }
 
 h1, h2, h3, h4, h5, h6, p {
